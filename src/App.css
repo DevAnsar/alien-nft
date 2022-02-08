@@ -13,3 +13,34 @@
 	text-rendering: optimizeLegibility;
 	font-display: auto;
 }
+@font-face {
+	font-family: 'Rubik';
+	src:url('./fonts/Rubik-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-display: auto;
+}
+.header , .about-us {
+	width: 100%;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+	position: relative;
+	z-index: 10;
+  }
+  
+  .random-dot{
+	width: 1px !important;
+	height: 1px !important;
+	border-radius: 50%;
+	position: absolute;
+  }
+  
+  .random-dot-1{
+	background-color: rgb(212, 212, 212);
+  }
+  
+  .random-dot-2{
+	background-color: rgb(128, 128, 128);
+  }

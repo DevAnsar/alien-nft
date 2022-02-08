@@ -1,15 +1,17 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 
 import Page from "../components/Page";
-import Header from "../components/header/Index";
 import Sidebar from "../components/Sidebar";
+import Header from "../components/header/Index";
+import AboutUs from "../components/aboutUs/Index";
 
 function IndexPage() {
   const [open, setOpen] = useState(false);
   return (
-    <Page title='Alien NFT'>
+    <Page title="Alien NFT" sx={{width : '100%'}}>
       <Sidebar isOpenSidebar={open} onCloseSidebar={() => setOpen(false)} />
       <Header />
+      <AboutUs />
     </Page>
   );
 }

@@ -1,13 +1,14 @@
-import "./style.css";
-import Navigation from './Navigation';
-import Users from './Users';
+import Navigation from "./Navigation";
+import Users from "./Users";
+import RandomDot from "../RandomDot";
 
 function Index() {
   return (
-    <header className="header">
+    <section className="header">
       <Navigation />
       <Users />
-    </header>
+      <RandomDot id={1} count={80} />
+    </section>
   );
 }
 export default Index;

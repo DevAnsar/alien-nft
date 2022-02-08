@@ -53,7 +53,7 @@ function Users() {
               left: "10%",
               zIndex: 1,
               "-webkit-mask-image": `-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))`,
-              "mask-image": `linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))`,
+              maskImage: `linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))`,
             }}
           />
           <Logo
@@ -63,7 +63,7 @@ function Users() {
               height: "fit-content",
               zIndex: 3,
               "-webkit-mask-image": `-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))`,
-              "mask-image": `linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))`,
+              maskImage: `linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))`,
             }}
           />
           <Logo
@@ -75,7 +75,7 @@ function Users() {
               right: "10%",
               zIndex: 1,
               "-webkit-mask-image": `-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))`,
-              "mask-image": `linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))`,
+              maskImage: `linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))`,
             }}
           />
         </Grid>
@@ -90,7 +90,7 @@ function Users() {
           <Text variant="h3">Next Biggest Expedition in the world Aliens</Text>
           <Text variant="h3">Travelling and Pleanet</Text>
           <Grid>
-            <Btn sx={{ marginTop: 2 }}>Discover Alien</Btn>
+            <Btn sx={{ marginTop: 2 , padding:"0 15px" }}>Discover Alien</Btn>
           </Grid>
         </Box>
       </Grid>

@@ -22,7 +22,6 @@ const IconWrapperStyle = styled("div")(({ theme }) => ({
   width: theme.spacing(5),
   height: theme.spacing(5),
   justifyContent: "center",
-  // marginBottom: theme.spacing(3),
   color: theme.palette.secondary.dark,
   backgroundImage: `linear-gradient(135deg, ${alpha(
     theme.palette.secondary.dark,
@@ -35,10 +34,8 @@ const NavBtn = styled(Button)(({ theme }) => ({
   display: "flex",
   borderRadius: theme.spacing(2.5),
   alignItems: "center",
-  // width: theme.spacing(5),
   height: theme.spacing(5),
   justifyContent: "center",
-  // marginBottom: theme.spacing(3),
   color: theme.palette.secondary.lighter,
   backgroundImage: `linear-gradient(135deg, #4F6BF7 100%, #3C54CE 100%)`,
 }));
