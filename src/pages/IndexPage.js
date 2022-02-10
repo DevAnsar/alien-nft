@@ -6,6 +6,7 @@ import Header from "../components/header/Index";
 import AboutUs from "../components/aboutUs/Index";
 import RoadMap from "../components/roadMap/Index";
 import Team from "../components/team/Index";
+import FAQ from "../components/faq/Index";
 
 function IndexPage() {
   const [open, setOpen] = useState(false);
@@ -16,6 +17,7 @@ function IndexPage() {
       <AboutUs />
       <RoadMap />
       <Team />
+      <FAQ />
     </Page>
   );
 }

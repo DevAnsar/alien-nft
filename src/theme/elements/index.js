@@ -1,6 +1,9 @@
 import { Button, Typography, Box } from "@mui/material";
 import { alpha, styled } from "@mui/material/styles";
 
+const ContentBG = `linear-gradient(0deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.08))`;
+const ContentBGActive = `linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.04))`;
+
 const Text = styled(Typography)(({ theme }) => ({
   boxShadow: "none",
   padding: theme.spacing(0, 1),
@@ -42,10 +45,9 @@ const ContentBox = styled(Box)(({ theme }) => ({
   height: "100%",
   margin: "5px",
   overflow: "hidden",
-  background:
-    "linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08))",
+  background:ContentBG,
   padding: theme.spacing(2),
   borderRadius: theme.spacing(1),
 }));
 
-export { Text, IconWrapperStyle, NavBtn, NavItem, ContentBox };
+export { Text, IconWrapperStyle, NavBtn, NavItem, ContentBox , ContentBG ,ContentBGActive };

@@ -1,9 +1,9 @@
 import React, { useCallback } from "react";
-import { Grid, Box, Typography } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import PropTypes from "prop-types";
 import { styled } from "@mui/material/styles";
 import Logo from "../Logo";
-import { IconWrapperStyle, ContentBox } from "./../../theme/elements";
+import { IconWrapperStyle, ContentBox, Text } from "./../../theme/elements";
 import Twitter from "./../../images/socials/Twitter.png";
 import LinkdIn from "./../../images/socials/LinkdIn.png";
 import Pintrest from "./../../images/socials/Pintrest.png";
@@ -17,14 +17,10 @@ const ImageBox = styled(Box)(({ theme }) => ({
   borderRadius: "50%",
 }));
 
-const Text = styled(Typography)(({ theme }) => ({
-  boxShadow: "none",
-  padding: theme.spacing(0, 1),
-  color: theme.palette.secondary.lighter,
-}));
-
 TeamCard.propTypes = {
   userLogo: PropTypes.string,
+  role: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 function TeamCard({ name, role, userLogo }) {
   const imageRef = useCallback((node) => {
