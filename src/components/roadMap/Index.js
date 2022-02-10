@@ -1,6 +1,5 @@
-import { Container, Grid, Typography, Button } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import RowContent from "./RowContent";
-import RandomDot from "../RandomDot";
 import { styled } from "@mui/material/styles";
 import Logo from "../Logo";
 
@@ -15,20 +14,10 @@ const Text = styled(Typography)(({ theme }) => ({
   color: theme.palette.secondary.lighter,
 }));
 
-// const Btn = styled(Button)(({ theme }) => ({
-//   margin: 0,
-//   padding: theme.spacing(0, 5),
-//   borderRadius: theme.spacing(2.5),
-//   height: theme.spacing(5),
-//   color: theme.palette.info.main,
-//   backgroundImage: `inherit`,
-//   border: `1px solid ${theme.palette.info.main}`,
-// }));
-
 function Index() {
   return (
-    <section id="road-map">
-      <Container maxWidth="lg" sx={{ zIndex: 2 , mb:6 }}>
+    <section id="road-map" style={{ paddingTop: 50 }}>
+      <Container maxWidth="lg" sx={{ zIndex: 2, my: 6 }}>
         <Grid
           className="road-map"
           container
@@ -44,7 +33,7 @@ function Index() {
             flexDirection="column"
             justifyContent="flex-start"
             alignItems="center"
-            sx={{mb:6}}
+            sx={{ mb: 6 }}
           >
             <Text variant="h2" textAlign="center">
               Project Roadmap

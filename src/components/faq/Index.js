@@ -52,7 +52,7 @@ function Index() {
   };
 
   return (
-    <section id="team">
+    <section id="faq" style={{paddingTop:50}}>
       <Container maxWidth="lg" sx={{ zIndex: 2, mb: 6 }}>
         <Grid container>
           <Grid

@@ -11,7 +11,7 @@ import user5 from "./../../images/about-user2.png";
 
 function Index() {
   return (
-    <section id="team">
+    <section id="team" style={{paddingTop:50}}>
       <Container maxWidth="lg" sx={{ zIndex: 2, mb: 6 }}>
         <Grid
           container

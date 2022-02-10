@@ -32,7 +32,9 @@
   position: relative;
   z-index: 10;
 }
-
+a{
+  text-decoration:none !important;
+}
 .random-dot {
   width: 1px !important;
   height: 1px !important;
@@ -48,23 +50,27 @@
   background-color: rgb(128, 128, 128);
 }
 
-/* .road-map {
-  content: "";
-  width: 3px;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0.33),
-    rgba(255, 255, 255, 0.33)
-  );
-  opacity: 0.65;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  transform: rotate(-0.02deg);
-} */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: hsl(211, 28%, 20%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4));
+}
+
 .road-map-line {
   width: 3px;
   height: 100%;
