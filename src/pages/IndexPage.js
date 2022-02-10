@@ -16,7 +16,7 @@ function IndexPage() {
   return (
     <Page title="Alien NFT" sx={{ width: "100%" }}>
       <Sidebar isOpenSidebar={open} onCloseSidebar={() => setOpen(false)} />
-      <Navigation />
+      <Navigation onOpenSidebar={()=>setOpen(true)} />
       <Header />
       <AboutUs />
       <RoadMap />

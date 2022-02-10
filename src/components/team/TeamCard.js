@@ -26,15 +26,16 @@ function TeamCard({ name, role, userLogo }) {
   const imageRef = useCallback((node) => {
     if (node !== null) {
       const imageWitdh = node.getBoundingClientRect().width;
-      node.style.height = imageWitdh + "px";
+      console.log(imageWitdh)
+      node.style.height = (imageWitdh) + "px";
     }
   }, []);
 
   return (
-    <ContentBox sx={{ width: "20%" }}>
+    <ContentBox sx={{p:{xs:1,sm:2}}}>
       <Grid
         item
-        md={12}
+        xs={12}
         display="flex"
         flexDirection="column"
         justifyContent="space-between"
@@ -66,7 +67,7 @@ function TeamCard({ name, role, userLogo }) {
           alignItems="center"
           sx={{ mt: 1 }}
         >
-          <Text variant="body3" sx={{ fontFamily: "Rubik" }}>
+          <Text variant="body3" component="pre" sx={{ fontFamily: "Rubik" }}>
             {role}
           </Text>
         </Grid>

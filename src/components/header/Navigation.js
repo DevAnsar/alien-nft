@@ -1,12 +1,17 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, IconButton } from "@mui/material";
+import PropTypes from "prop-types";
+import { Menu } from "@mui/icons-material";
+import MHidden from "./../MHidden";
+import { NavLinks, NavButtons } from "./NavData";
 import Logo from "./../Logo";
-import { IconWrapperStyle, NavBtn, NavItem } from "./../../theme/elements";
 import LogoIcon from "./../../images/logo.png";
-import Discord from "./../../images/socials/Discord.png";
-import Twitter from "./../../images/socials/Twitter.png";
-import Instagram from "./../../images/socials/Instagram.png";
+import { NavBtn } from "./../../theme/elements";
 
-function Navigation() {
+Navigation.propTypes = {
+  onOpenSidebar: PropTypes.func,
+};
+
+function Navigation({ onOpenSidebar }) {
   return (
     <div
       style={{
@@ -17,7 +22,12 @@ function Navigation() {
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={2} sx={{ padding: "10px 0" }}>
+        <Grid
+          container
+          spacing={2}
+          sx={{ padding: "10px 0" }}
+          justifyContent="space-between"
+        >
           <Grid
             item
             md={2}
@@ -28,56 +38,39 @@ function Navigation() {
           >
             <Logo src={LogoIcon} sx={{ width: 40 }} />
           </Grid>
-          <Grid
-            item
-            md={5}
-            display="flex"
-            flexDirection="row"
-            justifyContent="space-between"
-            alignItems="center"
-          >
-            <NavItem variant="body2" href="#header" component="a">
-              Home
-            </NavItem>
+          <MHidden width="mdDown">
+            <Grid
+              item
+              md={5}
+              display="flex"
+              flexDirection="row"
+              justifyContent="space-between"
+              alignItems="center"
+            >
+              <NavLinks />
+        
+            </Grid>
 
-            <NavItem variant="body2" href="#about-us" component="a">
-              About Us
-            </NavItem>
-
-            <NavItem variant="body2" href="#road-map" component="a">
-              Roadmap
-            </NavItem>
-
-            <NavItem variant="body2" href="#team" component="a">
-              Team
-            </NavItem>
-
-            <NavItem variant="body2" href="#faq" component="a">
-              FAQ
-            </NavItem>
-          </Grid>
-          <Grid
-            item
-            md={5}
-            display="flex"
-            flexDirection="row"
-            justifyContent="flex-end"
-            alignItems="center"
-          >
-            <IconWrapperStyle>
-              <Logo src={Discord} sx={{ width: 14 }} />
-            </IconWrapperStyle>
-
-            <IconWrapperStyle>
-              <Logo src={Twitter} sx={{ width: 14 }} />
-            </IconWrapperStyle>
-
-            <IconWrapperStyle>
-              <Logo src={Instagram} sx={{ width: 14 }} />
-            </IconWrapperStyle>
-
-            <NavBtn variant="contained">Buy a Alien</NavBtn>
-          </Grid>
+            <Grid
+              item
+              md={5}
+              display="flex"
+              flexDirection="row"
+              justifyContent="flex-end"
+              alignItems="center"
+            >
+              <NavButtons />
+              <NavBtn variant="contained">Buy a Alien</NavBtn>
+            </Grid>
+          </MHidden>
+          <MHidden width="mdUp">
+            <IconButton
+              onClick={onOpenSidebar}
+              sx={{ color: "#fff", p: 0, pt: 2 }}
+            >
+              <Menu sx={{ fontSize: "2rem" }} />
+            </IconButton>
+          </MHidden>
         </Grid>
       </Container>
     </div>

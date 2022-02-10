@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
 // material
 import { styled } from "@mui/material/styles";
-import { Box, Drawer } from "@mui/material";
+import { Box, Drawer, Grid } from "@mui/material";
+import { NavBtn, SideBarBG } from "./../theme/elements";
+import { NavLinks, NavButtons } from "./header/NavData";
 // components
 import Logo from "./Logo";
 import Scrollbar from "./Scrollbar";
@@ -41,7 +43,6 @@ function Sidebar({ isOpenSidebar, onCloseSidebar }) {
         sx={{
           px: 2.5,
           py: 3,
-          backgroundImage: "linear-gradient(120deg, #FAD961 0%, #F76B1C 57%)",
           display: "flex",
           justifyContent: "center",
         }}
@@ -51,7 +52,20 @@ function Sidebar({ isOpenSidebar, onCloseSidebar }) {
         </Box>
       </Box>
 
-      {/* <NavSection navConfig={sidebarConfig} /> */}
+      <Box>
+        <Grid display="flex" flexDirection="column">
+          <NavLinks sx={{ pt: 4 }} />
+        </Grid>
+
+        <Grid display="flex" flexDirection="column" sx={{ mt: 5, p: 3 }}>
+          <Grid display="flex" flexDirection="row" justifyContent="center">
+            <NavButtons />
+          </Grid>
+          <NavBtn sx={{ mt: 2 }} variant="contained">
+            Buy a Alien
+          </NavBtn>
+        </Grid>
+      </Box>
 
       <Box sx={{ flexGrow: 1 }} />
     </Scrollbar>
@@ -64,7 +78,14 @@ function Sidebar({ isOpenSidebar, onCloseSidebar }) {
           open={isOpenSidebar}
           onClose={onCloseSidebar}
           PaperProps={{
-            sx: { width: DRAWER_WIDTH }
+            sx: {
+              width: DRAWER_WIDTH,
+              background: SideBarBG,
+              boxShadow: `0px 8px 10px -5px rgb(40 42 44 / 43%), 0px 16px 24px 2px rgb(123 128 133 / 14%), 0px 6px 30px 5px rgb(120 123 126 / 12%)`,
+            },
+          }}
+          ModalProps={{
+            background: `linear-gradient(75deg, rgb(42 53 68 / 18%) 0%, rgb(0 0 0 / 85%) 100%)`,
           }}
         >
           {renderContent}

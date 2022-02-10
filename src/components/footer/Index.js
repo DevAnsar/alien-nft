@@ -15,7 +15,7 @@ function Index() {
       <Grid container>
         <Grid
           item
-          md={12}
+          xs={12}
           display="flex"
           flexDirection="column"
           justifyContent="center"
@@ -34,7 +34,7 @@ function Index() {
 
         <Grid
           item
-          md={12}
+          xs={12}
           display="flex"
           flexDirection="row"
           justifyContent="space-between"
@@ -45,18 +45,18 @@ function Index() {
             <Grid container xs={12}>
               <Grid
                 item
-                xs={6}
+                xs={10}
                 display="flex"
                 justifyContent="flex-start"
                 alignItems="center"
               >
-                <Text variant="body2">
+                <Text variant="body3">
                   © 2022 Alien-X CLUB. — All rights reserved.
                 </Text>
               </Grid>
               <Grid
                 item
-                xs={6}
+                xs={2}
                 display="flex"
                 justifyContent="flex-end"
                 alignItems="center"

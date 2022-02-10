@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 
 const ContentBG = `linear-gradient(0deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.08))`;
 const ContentBGActive = `linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.04))`;
+const SideBarBG = `linear-gradient(20deg, rgb(4 11 20 / 92%), rgb(20 0 41))}`;
 
 const Btn = styled(Button)(({ theme }) => ({
   margin: 0,
@@ -54,7 +55,6 @@ const ContentBox = styled(Box)(({ theme }) => ({
   margin: "5px",
   overflow: "hidden",
   background: ContentBG,
-  padding: theme.spacing(2),
   borderRadius: theme.spacing(1),
 }));
 
@@ -67,4 +67,5 @@ export {
   ContentBG,
   ContentBGActive,
   Btn,
+  SideBarBG
 };

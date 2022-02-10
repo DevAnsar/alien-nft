@@ -25,10 +25,11 @@ function Index() {
           flexDirection="column"
           justifyContent="flex-start"
           alignItems="center"
+          flexWrap="nowrap"
         >
           <Grid
             item
-            md={12}
+            xs={12}
             display="flex"
             flexDirection="column"
             justifyContent="flex-start"

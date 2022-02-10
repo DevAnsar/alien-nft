@@ -32,9 +32,8 @@ const Btn = styled(Button)(({ theme }) => ({
 
 function Index() {
   return (
-    <section id="about-us" >
+    <section id="about-us">
       <Container maxWidth="lg" sx={{ zIndex: 2 }}>
-        
         <Grid
           className="about-us"
           container
@@ -45,8 +44,10 @@ function Index() {
         >
           <RandomDot id={2} count={30} />
           <Grid
+            sx={{ mt: { xs: 15, sm: 2, md: 0 } }}
             item
-            md={6}
+            xs={8}
+            sm={6}
             display="flex"
             flexDirection="column"
             justifyContent="center"
@@ -54,7 +55,8 @@ function Index() {
           >
             <Grid
               item
-              xs={10}
+              xs={12}
+              sm={10}
               display="flex"
               flexDirection="row"
               justifyContent="flex-end"
@@ -74,7 +76,8 @@ function Index() {
             </Grid>
             <Grid
               item
-              xs={10}
+              xs={12}
+              sm={10}
               display="flex"
               flexDirection="row"
               justifyContent="flex-end"
@@ -94,14 +97,20 @@ function Index() {
           </Grid>
           <Grid
             item
-            md={6}
+            xs={12}
+            sm={6}
             display="flex"
             flexDirection="column"
             justifyContent="space-around"
             alignItems="center"
           >
-            <Grid md={9}>
-              <Text1 variant="h3">About the collection</Text1>
+            <Grid xs={12} sm={10} md={9}>
+              <Text1
+                sx={{ textAlign: { xs: "center", sm: "left" } }}
+                variant="h4"
+              >
+                About the collection
+              </Text1>
 
               <Text1 variant="body1" sx={{ fontFamily: "Rubik", mt: 5 }}>
                 The Alien Club is a collection of 7,999 Monster Ape NFTs
@@ -114,7 +123,14 @@ function Index() {
                 community and project around NFTs.
               </Text1>
 
-              <Btn sx={{ marginTop: 5, padding: "0 15px" }}>Join Discord</Btn>
+              <Grid xs={12} sx={{textAlign:{xs:"center",sm:"left"}}}>
+                <Btn
+                  textAlign="center"
+                  sx={{ marginTop: 5, padding: "0 15px" }}
+                >
+                  Join Discord
+                </Btn>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
