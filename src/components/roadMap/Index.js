@@ -37,8 +37,6 @@ function Index() {
           justifyContent="flex-start"
           alignItems="center"
         >
-          {/* <RandomDot id={2} count={30} /> */}
-
           <Grid
             item
             md={12}

@@ -1,44 +1,10 @@
-import { Container, Grid, Typography, Button } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Logo from "./../Logo";
-import { alpha, styled } from "@mui/material/styles";
-
+import { IconWrapperStyle, NavBtn, NavItem } from "./../../theme/elements";
 import LogoIcon from "./../../images/logo.png";
-import Discord from "./../../images/Discord.png";
-import Twitter from "./../../images/Twitter.png";
-import Instagram from "./../../images/Instagram.png";
-
-const NavItem = styled(Typography)(({ theme }) => ({
-  boxShadow: "none",
-  textAlign: "center",
-  padding: theme.spacing(0, 1),
-  color: theme.palette.secondary.lighter,
-}));
-
-const IconWrapperStyle = styled("div")(({ theme }) => ({
-  margin: theme.spacing(0, 1),
-  display: "flex",
-  borderRadius: "50%",
-  alignItems: "center",
-  width: theme.spacing(5),
-  height: theme.spacing(5),
-  justifyContent: "center",
-  color: theme.palette.secondary.dark,
-  backgroundImage: `linear-gradient(135deg, ${alpha(
-    theme.palette.secondary.dark,
-    0.25
-  )} 100%, ${alpha(theme.palette.secondary.dark, 0.35)} 100%)`,
-}));
-
-const NavBtn = styled(Button)(({ theme }) => ({
-  margin: 0,
-  display: "flex",
-  borderRadius: theme.spacing(2.5),
-  alignItems: "center",
-  height: theme.spacing(5),
-  justifyContent: "center",
-  color: theme.palette.secondary.lighter,
-  backgroundImage: `linear-gradient(135deg, #4F6BF7 100%, #3C54CE 100%)`,
-}));
+import Discord from "./../../images/socials/Discord.png";
+import Twitter from "./../../images/socials/Twitter.png";
+import Instagram from "./../../images/socials/Instagram.png";
 
 function Navigation() {
   return (

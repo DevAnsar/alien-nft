@@ -23,7 +23,8 @@
 }
 .header,
 .about-us,
-.road-map {
+.road-map,
+.team {
   width: 100%;
   min-height: 100vh;
   left: 0px;
@@ -90,9 +91,9 @@
   justify-content: center;
   align-items: center;
 }
-.road-map-circle2{
-	width: 7px;
-	height: 7px;
-	border-radius: 50%;
-	background-color: cornflowerblue;
+.road-map-circle2 {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: cornflowerblue;
 }
