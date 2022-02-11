@@ -52,7 +52,7 @@ function Users() {
               position: "absolute",
               left: "10%",
               zIndex: 1,
-              "-webkit-mask-image": `-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))`,
+              WebkitMaskImage: `-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))`,
               maskImage: `linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))`,
             }}
           />
@@ -62,7 +62,7 @@ function Users() {
               width: "40%",
               height: "fit-content",
               zIndex: 3,
-              "-webkit-mask-image": `-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))`,
+              WebkitMaskImage: `-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))`,
               maskImage: `linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))`,
             }}
           />
@@ -74,7 +74,7 @@ function Users() {
               position: "absolute",
               right: "10%",
               zIndex: 1,
-              "-webkit-mask-image": `-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))`,
+              WebkitMaskImage: `-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))`,
               maskImage: `linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))`,
             }}
           />

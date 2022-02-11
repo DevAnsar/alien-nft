@@ -1,6 +1,6 @@
 {
   "name": "alien-nft-design",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
@@ -15,6 +15,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet-async": "^1.2.2",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "simplebar-react": "^2.3.6",
     "web-vitals": "^2.1.4"

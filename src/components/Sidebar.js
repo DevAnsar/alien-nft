@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 // material
 import { styled } from "@mui/material/styles";
@@ -28,6 +29,7 @@ Sidebar.propTypes = {
 };
 
 function Sidebar({ isOpenSidebar, onCloseSidebar }) {
+
   const renderContent = (
     <Scrollbar
       sx={{
@@ -53,8 +55,8 @@ function Sidebar({ isOpenSidebar, onCloseSidebar }) {
       </Box>
 
       <Box>
-        <Grid display="flex" flexDirection="column">
-          <NavLinks sx={{ pt: 4 }} />
+        <Grid display="flex" flexDirection="column" sx={{ pt: 2 }}>
+          <NavLinks sx={{ py: 2 }} onClose={onCloseSidebar} />
         </Grid>
 
         <Grid display="flex" flexDirection="column" sx={{ mt: 5, p: 3 }}>

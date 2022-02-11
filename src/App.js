@@ -1,5 +1,6 @@
 import "./App.css";
 import { HelmetProvider } from "react-helmet-async";
+import { BrowserRouter } from "react-router-dom";
 // theme
 import ThemeConfig from "./theme";
 import GlobalStyles from "./theme/globalStyles";
@@ -11,19 +12,21 @@ const RootStyle = styled("div")({
   display: "flex",
   minHeight: "100%",
   overflow: "hidden",
-  backgroundColor : "#110620"
+  backgroundColor: "#110620",
 });
 
 function App() {
   return (
-    <ThemeConfig>
-      <HelmetProvider>
-        <GlobalStyles />
-        <RootStyle>
-          <IndexPage />
-        </RootStyle>
-      </HelmetProvider>
-    </ThemeConfig>
+    <BrowserRouter>
+      <ThemeConfig>
+        <HelmetProvider>
+          <GlobalStyles />
+          <RootStyle>
+            <IndexPage />
+          </RootStyle>
+        </HelmetProvider>
+      </ThemeConfig>
+    </BrowserRouter>
   );
 }
 
