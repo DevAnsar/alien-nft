@@ -62,7 +62,7 @@ function Index() {
               justifyContent="flex-end"
               alignItems="center"
             >
-              <Grid xs={6}>
+              <Grid item xs={6}>
                 <UserBox>
                   <Logo src={user1} sx={{ width: "100%" }} />
                 </UserBox>
@@ -83,12 +83,12 @@ function Index() {
               justifyContent="flex-end"
               alignItems="center"
             >
-              <Grid xs={6}>
+              <Grid item xs={6}>
                 <UserBox>
                   <Logo src={user3} sx={{ width: "100%" }} />
                 </UserBox>
               </Grid>
-              <Grid xs={6}>
+              <Grid item xs={6}>
                 <UserBox>
                   <Logo src={user4} sx={{ width: "100%" }} />
                 </UserBox>
@@ -104,7 +104,7 @@ function Index() {
             justifyContent="space-around"
             alignItems="center"
           >
-            <Grid xs={12} sm={10} md={9}>
+            <Grid item xs={12} sm={10} md={9}>
               <Text1
                 sx={{ textAlign: { xs: "center", sm: "left" } }}
                 variant="h4"
@@ -123,9 +123,8 @@ function Index() {
                 community and project around NFTs.
               </Text1>
 
-              <Grid xs={12} sx={{textAlign:{xs:"center",sm:"left"}}}>
+              <Grid item xs={12} sx={{textAlign:{xs:"center",sm:"left"}}}>
                 <Btn
-                  textAlign="center"
                   sx={{ marginTop: 5, padding: "0 15px" }}
                 >
                   Join Discord

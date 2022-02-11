@@ -52,8 +52,8 @@ function Index() {
             row={1}
             title={
               <>
-                <Text variant="h3">The world Alien</Text>
-                <Text variant="h3">Monsters</Text>
+                <Text variant="h4">The world Alien</Text>
+                <Text variant="h4">Monsters</Text>
               </>
             }
             box={
@@ -77,7 +77,7 @@ function Index() {
             row={2}
             title={
               <>
-                <Text variant="h3">Alien Metaverse</Text>
+                <Text variant="h4">Alien Metaverse</Text>
               </>
             }
             box={
@@ -105,8 +105,8 @@ function Index() {
             row={3}
             title={
               <>
-                <Text variant="h3">Tribute to the Alien</Text>
-                <Text variant="h3">NFT apostles</Text>
+                <Text variant="h4">Tribute to the Alien</Text>
+                <Text variant="h4">NFT apostles</Text>
               </>
             }
             box={
@@ -133,7 +133,7 @@ function Index() {
             row={4}
             title={
               <>
-                <Text variant="h3">Exclusive merch</Text>
+                <Text variant="h4">Exclusive merch</Text>
               </>
             }
             box={
@@ -163,7 +163,7 @@ function Index() {
             row={5}
             title={
               <>
-                <Text variant="h3">
+                <Text variant="h4">
                   Alien capture the hearts of NFT collectors
                 </Text>
               </>

@@ -42,12 +42,10 @@ function RowContent({ row, title, box }) {
         alignItems="center "
         sx={{ px: { xs: 1, md: 2 } }}
       >
-        <Grid xs={12} sm={12} md={8} lg={8} sx={{ my: 2 }}>
+        <Grid item xs={12} sm={12} md={8} lg={8} sx={{ my: 2 }}>
           {row % 2 === 0 ? (
             <ContentBox sx={ContentBorder}>{box}</ContentBox>
-          ) : (
-            <Text variant="h4">{title}</Text>
-          )}
+          ) : title }
         </Grid>
       </Grid>
       <Box sx={{ position: "absolute" }} className="road-map-line">
@@ -64,10 +62,8 @@ function RowContent({ row, title, box }) {
         alignItems="flex-start"
         sx={{ px: 2 }}
       >
-        <Grid xs={12} sm={12} md={8} lg={8}>
-          {row % 2 === 0 ? (
-            <Text variant="h4">{title}</Text>
-          ) : (
+        <Grid item xs={12} sm={12} md={8} lg={8}>
+          {row % 2 === 0 ? title : (
             <ContentBox sx={ContentBorder}>{box}</ContentBox>
           )}
         </Grid>

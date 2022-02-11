@@ -35,35 +35,35 @@ function Index() {
             flexWrap="wrap"
             sx={{ mb: 6 }}
           >
-            <Grid xs={6} sm={4} md={3} lg={2} >
+            <Grid item xs={6} sm={4} md={3} lg={2} >
               <TeamCard
                 userLogo={user1}
                 name="John De"
                 role="Founder, 3D Artist."
               />
             </Grid>
-            <Grid xs={6} sm={4} md={3} lg={2} >
+            <Grid item xs={6} sm={4} md={3} lg={2} >
               <TeamCard
                 userLogo={user2}
                 name="Mondey Jon"
                 role={`Marketing & Development`}
               />
             </Grid>
-            <Grid xs={6} sm={4} md={3} lg={2}>
+            <Grid item xs={6} sm={4} md={3} lg={2}>
               <TeamCard
                 userLogo={user3}
                 name="Alriyan"
                 role="The Web Designer"
               />
             </Grid>
-            <Grid xs={6} sm={4} md={3} lg={2}>
+            <Grid item xs={6} sm={4} md={3} lg={2}>
               <TeamCard
                 userLogo={user4}
                 name="Jaimon Dole"
                 role="Blockchain Expert"
               />
             </Grid>
-            <Grid xs={6} sm={4} md={3} lg={2}>
+            <Grid item xs={6} sm={4} md={3} lg={2}>
               <TeamCard userLogo={user5} name="Arbut Hok" role="3D Artist" />
             </Grid>
           </Grid>

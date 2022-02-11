@@ -42,7 +42,7 @@ function Index() {
           sx={{ py: 2, background: `rgba(255, 255, 255, 0.18);` }}
         >
           <Container maxWidth="lg">
-            <Grid container xs={12}>
+            <Grid container >
               <Grid
                 item
                 xs={10}

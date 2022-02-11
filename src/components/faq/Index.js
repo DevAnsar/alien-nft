@@ -57,7 +57,7 @@ function Index() {
         <Grid container>
           <Grid
             item
-            md={12}
+            xs={12}
             display="flex"
             flexDirection="row"
             justifyContent="center"
@@ -71,7 +71,7 @@ function Index() {
 
           <Grid
             item
-            md={12}
+            xs={12}
             display="flex"
             flexDirection="row"
             justifyContent="space-between"

@@ -2,33 +2,32 @@ import React, { useEffect } from "react";
 import { Box } from "@mui/material";
 
 function RandomDot({ id = 1, count }) {
-  function createFlake() {
-    const area = document.querySelector(`.random-dot-area-${id}`);
-
-    const areaWidth = area.offsetWidth;
-    const areaHeight = area.offsetHeight;
-
-    for (let i = 0; i < count / 2; i++) {
-      const span = document.createElement("div");
-      span.classList.add("random-dot");
-      span.classList.add("random-dot-1");
-      span.style.left = Math.random() * areaWidth + "px";
-      span.style.top = Math.random() * areaHeight + "px";
-      area.append(span);
-    }
-    for (let i = 0; i < count / 2; i++) {
-      const span = document.createElement("div");
-      span.classList.add("random-dot");
-      span.classList.add("random-dot-2");
-      span.style.left = Math.random() * areaWidth + "px";
-      span.style.top = Math.random() * areaHeight + "px";
-      area.append(span);
-    }
-  }
-
-  useEffect(() => {
-    createFlake();
-  }, []);
+  useEffect( () => {
+    const createFlake = ()=> new Promise((resolve) => {
+        const area = document.querySelector(`.random-dot-area-${id}`);
+        const areaWidth = area.offsetWidth;
+        const areaHeight = area.offsetHeight;
+        for (let i = 0; i < count / 2; i++) {
+          const span = document.createElement("div");
+          span.classList.add("random-dot");
+          span.classList.add("random-dot-1");
+          span.style.left = Math.random() * areaWidth + "px";
+          span.style.top = Math.random() * areaHeight + "px";
+          area.append(span);
+        }
+        for (let i = 0; i < count / 2; i++) {
+          const span = document.createElement("div");
+          span.classList.add("random-dot");
+          span.classList.add("random-dot-2");
+          span.style.left = Math.random() * areaWidth + "px";
+          span.style.top = Math.random() * areaHeight + "px";
+          area.append(span);
+        }
+        resolve();
+      })
+    
+     createFlake();
+  }, [id,count]);
   return (
     <Box
       className={`random-dot-area-${id}`}

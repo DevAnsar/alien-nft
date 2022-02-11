@@ -30,7 +30,7 @@ function Navigation({ onOpenSidebar }) {
         >
           <Grid
             item
-            md={2}
+            xs={2}
             display="flex"
             flexDirection="row"
             justifyContent="space-between"
@@ -41,7 +41,7 @@ function Navigation({ onOpenSidebar }) {
           <MHidden width="mdDown">
             <Grid
               item
-              md={5}
+              xs={5}
               display="flex"
               flexDirection="row"
               justifyContent="space-between"
@@ -52,7 +52,7 @@ function Navigation({ onOpenSidebar }) {
 
             <Grid
               item
-              md={5}
+              xs={5}
               display="flex"
               flexDirection="row"
               justifyContent="flex-end"
