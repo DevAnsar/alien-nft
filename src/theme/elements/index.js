@@ -48,6 +48,10 @@ const NavItem = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   padding: theme.spacing(0, 1),
   color: theme.palette.secondary.lighter,
+  cursor:"pointer",
+  "&:hover":{
+    color: theme.palette.primary.lighter,
+  }
 }));
 
 const ContentBox = styled(Box)(({ theme }) => ({

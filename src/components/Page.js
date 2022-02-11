@@ -9,6 +9,8 @@ import { Box } from "@mui/material";
 const Page = forwardRef(({ children, title = "", ...other }, ref) => (
   <Box ref={ref} {...other}>
     <Helmet>
+      <meta name="description" content="Next Biggest Expedition in the world Aliens Travelling and Pleanet" />
+      <meta name="author" content="Ansar Mirzayi"></meta>
       <title>{title}</title>
     </Helmet>
     {children}

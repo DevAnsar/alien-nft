@@ -1,6 +1,5 @@
 import "./App.css";
 import { HelmetProvider } from "react-helmet-async";
-import { BrowserRouter } from "react-router-dom";
 // theme
 import ThemeConfig from "./theme";
 import GlobalStyles from "./theme/globalStyles";
@@ -17,7 +16,7 @@ const RootStyle = styled("div")({
 
 function App() {
   return (
-    <BrowserRouter>
+
       <ThemeConfig>
         <HelmetProvider>
           <GlobalStyles />
@@ -26,7 +25,6 @@ function App() {
           </RootStyle>
         </HelmetProvider>
       </ThemeConfig>
-    </BrowserRouter>
   );
 }
 

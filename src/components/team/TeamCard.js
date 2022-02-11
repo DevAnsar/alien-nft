@@ -23,16 +23,20 @@ TeamCard.propTypes = {
   name: PropTypes.string.isRequired,
 };
 function TeamCard({ name, role, userLogo }) {
-  const imageRef = useCallback((node) => {
-    if (node !== null) {
-      const imageWitdh = node.getBoundingClientRect().width;
-      console.log(imageWitdh)
-      node.style.height = (imageWitdh) + "px";
-    }
-  }, []);
+
+  // const imageRef = useCallback((node) => {
+  //   if (node !== null) {
+  //     setTimeout(()=>{
+  //       const imageWitdh = node.getBoundingClientRect().width;
+  //       console.log(imageWitdh)
+  //       node.style.height = (imageWitdh) + "px";
+  //     },1000)
+
+  //   }
+  // }, []);
 
   return (
-    <ContentBox sx={{p:{xs:1,sm:2}}}>
+    <ContentBox sx={{p:{xs:1,sm:2}}} >
       <Grid
         item
         xs={12}
@@ -42,7 +46,7 @@ function TeamCard({ name, role, userLogo }) {
         alignItems="center"
         sx={{ position: "relative", minHeight: "100%" }}
       >
-        <ImageBox ref={imageRef}>
+        <ImageBox>
           <Logo src={userLogo} />
         </ImageBox>
 

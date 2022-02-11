@@ -87,10 +87,12 @@ function Users() {
             marginTop: "10%",
           }}
         >
-          <Text variant="h3">Next Biggest Expedition in the world Aliens</Text>
-          <Text variant="h3">Travelling and Pleanet</Text>
+          <Text variant="h4">Next Biggest Expedition in the world Aliens</Text>
+          <Text variant="h4">Travelling and Pleanet</Text>
           <Grid>
-            <Btn sx={{ marginTop: 2 , padding:"0 15px" }}>Discover Alien</Btn>
+            <Btn sx={{ marginTop: 2 , padding:"0 15px" }}>
+              <Text  variant="h5">Discover Alien</Text>
+            </Btn>
           </Grid>
         </Box>
       </Grid>

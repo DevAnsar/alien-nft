@@ -48,7 +48,6 @@ function Navigation({ onOpenSidebar }) {
               alignItems="center"
             >
               <NavLinks />
-        
             </Grid>
 
             <Grid
@@ -64,10 +63,7 @@ function Navigation({ onOpenSidebar }) {
             </Grid>
           </MHidden>
           <MHidden width="mdUp">
-            <IconButton
-              onClick={onOpenSidebar}
-              sx={{ color: "#fff", p: 0, pt: 2 }}
-            >
+            <IconButton onClick={onOpenSidebar} sx={{ color: "#fff", mt: 2 }}>
               <Menu sx={{ fontSize: "2rem" }} />
             </IconButton>
           </MHidden>
